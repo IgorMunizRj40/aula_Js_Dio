@@ -1,22 +1,22 @@
-let nome = "Igor Muniz";
-let idade=33;
-let idade2=10;
-let frase = "Brasil e a melhor seleção do mundo!";
-let n1 = 20;
-let n2=30;
+//====================Dicionário============
+/*let fruta = {nome:"maça", cor: "vermelha", id:"01" }//similar ao objeto json
+alert(fruta.nome);//chama o nome
+console.log(fruta.id);//mostra em log o id */
 
-//alert("Bem vindo " + nome + " idade " + idade + " anos");
-//alert(idade+idade2)
+let frutas = [{nome:"maça", cor: "vermelha", id:"01" }, {nome:"banana", cor: "amarela", id:"02" }, {nome:"uva", cor: "roxa", id:"03" }]//
+alert(frutas[0].nome);
+console.log(frutas[0].cor);
 
+//====================Array=============
+//let lista = ["maça", "banana", "laranja"];//array
+//lista.push("uva");//push acresenta 
+//lista.pop();//pop retira o ultimo valor(posicao) do array
 
-console.log(nome);
-console.log(idade);
-console.log(idade2);
-console.log(frase.replace("Brasil", "Japão"));//replace altera 
+//console.log(lista.length);//ver o tamanho da lista
+//console.log(lista.reverse());//inverte o array
+//console.log(lista.toString());//carrega no log o array como string
+//console.log(lista.join(" + "));//carrega o array e o separa com o que estiver entre as " "
 
-alert(frase.replace("Brasil", "Japão"));//replace no alert
-
-console.log(frase.toUpperCase());//coloca toda var(let) em caixa alta
-console.log(frase.toLowerCase());//caixa baixa em toda let
-console.log(n1+n2);//assim como manipulamos as strings podemos manipular os numeros
-console.log(n1*n2);
+//alert(lista);imprimi a lista no alert
+//alert(lista[0]);//passo o parametro do array
+//console.log(lista[1]);//imprimi no console o valor no 2° array
