@@ -1,22 +1,28 @@
-//====================Dicionário============
-/*let fruta = {nome:"maça", cor: "vermelha", id:"01" }//similar ao objeto json
-alert(fruta.nome);//chama o nome
-console.log(fruta.id);//mostra em log o id */
+//===============Condicionais=====================
 
-let frutas = [{nome:"maça", cor: "vermelha", id:"01" }, {nome:"banana", cor: "amarela", id:"02" }, {nome:"uva", cor: "roxa", id:"03" }]//
-alert(frutas[0].nome);
-console.log(frutas[0].cor);
+/*let idade = prompt("Qual e a sua idade?");//abre um box com uma pergunta
+if(idade >=18){
+    alert("Maior de idade");
+}else{
+    alert("Menor de idade");
+};*/
 
-//====================Array=============
-//let lista = ["maça", "banana", "laranja"];//array
-//lista.push("uva");//push acresenta 
-//lista.pop();//pop retira o ultimo valor(posicao) do array
+//=================Laços============================
+/*let count = 0;
+while(count<=5){//enquanto
+    console.log(count);
+    alert(count);
+    count=count+1; //ou count++
+}*/
 
-//console.log(lista.length);//ver o tamanho da lista
-//console.log(lista.reverse());//inverte o array
-//console.log(lista.toString());//carrega no log o array como string
-//console.log(lista.join(" + "));//carrega o array e o separa com o que estiver entre as " "
+/*let count;
+for(count=1; count<=10; count++){
+    console.log(count);
+    alert(count);
+};*/
 
-//alert(lista);imprimi a lista no alert
-//alert(lista[0]);//passo o parametro do array
-//console.log(lista[1]);//imprimi no console o valor no 2° array
+//trabalhando com data
+let d = new Date();
+//alert(d);
+//alert(d.getMonth()+1);//carrega o mês atual
+alert(d.getMinutes());//carrega o minuto atual-ainda tem o get.hora/get.day...
