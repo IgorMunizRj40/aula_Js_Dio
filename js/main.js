@@ -1,28 +1,21 @@
-//===============Condicionais=====================
+/*function soma(n1, n2){
+    return n1+n2;
+}
+alert(soma(5,15));*///soma passando parametros
 
-/*let idade = prompt("Qual e a sua idade?");//abre um box com uma pergunta
-if(idade >=18){
-    alert("Maior de idade");
-}else{
-    alert("Menor de idade");
-};*/
+/*function setReplace(frase, nome, novo_nome){
+    return frase.replace(nome, novo_nome)
+}
+alert(setReplace("Vai Chile! Juntos somos mais fortes.", "Chile", "França"));*/
 
-//=================Laços============================
-/*let count = 0;
-while(count<=5){//enquanto
-    console.log(count);
-    alert(count);
-    count=count+1; //ou count++
-}*/
-
-/*let count;
-for(count=1; count<=10; count++){
-    console.log(count);
-    alert(count);
-};*/
-
-//trabalhando com data
-let d = new Date();
-//alert(d);
-//alert(d.getMonth()+1);//carrega o mês atual
-alert(d.getMinutes());//carrega o minuto atual-ainda tem o get.hora/get.day...
+function validaIdade(idade){
+    let validar;
+    if(idade >= 18){
+        validar = true;
+    }else{
+        validar = false;
+    }
+    return validar;
+}
+let idade = prompt("Qual e a sua idade?");
+console.log(validaIdade(idade));
