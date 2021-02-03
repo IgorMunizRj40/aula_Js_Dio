@@ -1,21 +1,28 @@
-/*function soma(n1, n2){
-    return n1+n2;
+function botao(){
+    document.getElementById("agradecimento").innerHTML = "<b>Você clicou!</b>";
+    //console.log(document.getElementById("agradecimento"));
+    //alert("Obrigado por clicar!");
 }
-alert(soma(5,15));*///soma passando parametros
+function redirecionar(){
+    window.open("https://google.com/");//abre em uma nova janela
+    //window.location.href = "https://googletradutor.com/";//abre na mesma janela
+}
 
-/*function setReplace(frase, nome, novo_nome){
-    return frase.replace(nome, novo_nome)
+function trocar(elemento){
+    elemento.innerHTML = "Passou o mouse";//usado com o parametro elemeto
+    //document.getElementById("mouseOver").innerHTML = "passou o mouse";//usado sem o elemento
+    //alert("trocar texto");
 }
-alert(setReplace("Vai Chile! Juntos somos mais fortes.", "Chile", "França"));*/
 
-function validaIdade(idade){
-    let validar;
-    if(idade >= 18){
-        validar = true;
-    }else{
-        validar = false;
-    }
-    return validar;
+function voltar(elemento){
+    elemento.innerHTML = "Passe o mouse aqui...";
+    //document.getElementById("mouseOver").innerHTML = "trocou";//func p/ efeito de passagem do mouse
 }
-let idade = prompt("Qual e a sua idade?");
-console.log(validaIdade(idade));
+
+function load(){
+    alert("Página carregada")//onload usado no body para carregar
+}
+
+function funcaoChange(elemento){
+    console.log(elemento.value);
+}

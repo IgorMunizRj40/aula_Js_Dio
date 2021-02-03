@@ -7,11 +7,20 @@
     <script type="text/Javascript" src="js/main.js"></script>
 </head>
 
-<body>
+<body onload="load()">
     <!--<script>
         alert("Meu primeiro Js");
     </script> Incluindo o js dentro do html/Alert abre um popup -->
     <h1>Minha página</h1>
+    <button type="button" onclick="botao()">Clique aqui...!</button>
+    <p id="agradecimento" onclick="redirecionar()"></p>
+    <p id="mouseOver" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui...</p>
+    <p id="mouseOver2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui...</p>
+    <select onchange="funcaoChange(this)">
+        <option value="1">valor 1</option>
+        <option value="2">valor 2</option>
+        <option value="3">valor 3</option>
+    </select>
 </body>
 
 </html>
